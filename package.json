@@ -1,5 +1,5 @@
 {
-  "name": "inno-feature-flag-plateform",
+  "name": "@feature-flip/feature-flag-platform",
   "private": true,
   "scripts": {
     "build": "turbo build",
