@@ -1,6 +1,6 @@
 'use client'
 
-import { useSession } from '@flag-platform/auth/react'
+import { useSession } from '@feature-flip/auth/react'
 import { useRouter } from 'next/navigation'
 import { usePathname } from 'next/navigation'
 import { useEffect } from 'react'

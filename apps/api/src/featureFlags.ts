@@ -1,5 +1,5 @@
-import { prisma } from '@flag-platform/db'
-import { FeatureFlag, Environment } from '@flag-platform/db/types'
+import { prisma } from '@feature-flip/db'
+import { FeatureFlag, Environment } from '@feature-flip/db/types'
 
 export const getFeatureFlagsByProjectName = async (
   projectName: string,

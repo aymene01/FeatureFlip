@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.3.3",
-    "@flag-platform/db": "workspace:*",
+    "@feature-flip/db": "workspace:*",
     "hono": "^3.11.11"
   },
   "devDependencies": {

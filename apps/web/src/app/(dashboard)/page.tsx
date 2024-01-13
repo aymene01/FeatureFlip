@@ -1,7 +1,7 @@
 'use client'
 
-import { Button } from '@flag-platform/ui'
-import { signOut, useSession } from '@flag-platform/auth/react'
+import { Button } from '@feature-flip/ui'
+import { signOut, useSession } from '@feature-flip/auth/react'
 
 export default function Home() {
   const { data: session } = useSession()

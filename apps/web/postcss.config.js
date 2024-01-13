@@ -1,1 +1,1 @@
-module.exports = require('@flag-platform/ui/postcss.config')
+module.exports = require('@feature-flip/ui/postcss.config')

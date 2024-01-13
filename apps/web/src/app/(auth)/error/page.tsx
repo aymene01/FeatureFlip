@@ -1,4 +1,4 @@
-import { Button } from '@flag-platform/ui'
+import { Button } from '@feature-flip/ui'
 import { FiAlertCircle } from 'react-icons/fi'
 
 export default function LoginErrorPage() {

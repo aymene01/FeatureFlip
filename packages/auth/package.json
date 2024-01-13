@@ -1,5 +1,5 @@
 {
-  "name": "@flag-platform/auth",
+  "name": "@feature-flip/auth",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
