@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@inno-flag-platform/ui'
+import { Button } from '@flag-platform/ui'
 import { signIn } from 'next-auth/react'
 import { FcGoogle } from 'react-icons/fc'
 

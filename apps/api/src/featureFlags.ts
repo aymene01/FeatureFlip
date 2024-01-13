@@ -1,5 +1,5 @@
-import { prisma } from '@inno-flag-platform/db'
-import { FeatureFlag, Environment } from '@inno-flag-platform/db/types'
+import { prisma } from '@flag-platform/db'
+import { FeatureFlag, Environment } from '@flag-platform/db/types'
 
 export const getFeatureFlagsByProjectName = async (
   projectName: string,

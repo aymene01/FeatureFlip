@@ -1,5 +1,5 @@
 {
-  "name": "@inno-flag-platform/auth",
+  "name": "@flag-platform/auth",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

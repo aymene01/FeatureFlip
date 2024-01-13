@@ -1,4 +1,4 @@
-import '@inno-flag-platform/ui/src/styles/tailwind.css'
+import '@flag-platform/ui/src/styles/tailwind.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 

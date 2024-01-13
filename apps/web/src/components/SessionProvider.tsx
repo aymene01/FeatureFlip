@@ -1,5 +1,5 @@
 'use client'
 
-import { SessionProvider } from '@inno-flag-platform/auth/react'
+import { SessionProvider } from '@flag-platform/auth/react'
 
 export default SessionProvider

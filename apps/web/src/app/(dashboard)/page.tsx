@@ -1,7 +1,7 @@
 'use client'
 
-import { Button } from '@inno-flag-platform/ui'
-import { signOut, useSession } from '@inno-flag-platform/auth/react'
+import { Button } from '@flag-platform/ui'
+import { signOut, useSession } from '@flag-platform/auth/react'
 
 export default function Home() {
   const { data: session } = useSession()

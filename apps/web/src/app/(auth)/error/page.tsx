@@ -1,4 +1,4 @@
-import { Button } from '@inno-flag-platform/ui'
+import { Button } from '@flag-platform/ui'
 import { FiAlertCircle } from 'react-icons/fi'
 
 export default function LoginErrorPage() {

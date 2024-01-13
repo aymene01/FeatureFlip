@@ -3,7 +3,7 @@ import { Hono } from 'hono'
 import { apiKeyMiddleware } from './auth'
 import { getFeatureFlagsByProjectName } from './featureFlags'
 import { prettyJSON } from 'hono/pretty-json'
-import { Environment } from '@inno-flag-platform/db/types'
+import { Environment } from '@flag-platform/db/types'
 
 const app = new Hono()
 

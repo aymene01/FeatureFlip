@@ -1,1 +1,1 @@
-export { GET, POST } from '@inno-flag-platform/auth/server'
+export { GET, POST } from '@flag-platform/auth/server'

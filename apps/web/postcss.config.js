@@ -1,1 +1,1 @@
-module.exports = require('@inno-flag-platform/ui/postcss.config')
+module.exports = require('@flag-platform/ui/postcss.config')

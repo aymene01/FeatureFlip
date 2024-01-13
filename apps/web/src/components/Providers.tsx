@@ -2,7 +2,7 @@
 
 import AuthGuard from './AuthGuard'
 import NextAuthProvider from './SessionProvider'
-import { auth } from '@inno-flag-platform/auth/server'
+import { auth } from '@flag-platform/auth/server'
 
 const Providers = async ({ children }: { children: React.ReactNode }) => {
   const session = await auth()
