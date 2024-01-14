@@ -4,6 +4,7 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "typecheck": "turbo typecheck",
     "web:dev": "turbo dev --filter=web",
     "api:dev": "turbo dev --filter=feature-flag-platform-api",
     "lint": "turbo lint",
