@@ -12,3 +12,49 @@ services:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
       POSTGRES_DB: database
+  
+  node_exporter:
+    container_name: ffp-api-node-exporter
+    hostname: ffp-api-node-exporter
+    image: prom/node-exporter:latest
+    restart: unless-stopped
+    ports:
+      - 9100:9100
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - '--path.procfs=/host/proc'
+      - '--path.sysfs=/host/sys'
+      - '--collector.filesystem.ignored-mount-points=^/(sys|proc|dev|host|etc)($$|/)'
+      - '--collector.filesystem.ignored-fs-types=^(sys|proc|auto)fs$$'
+  
+  prometheus:
+    container_name: ffp-api-prometheus
+    hostname: ffp-api-prometheus
+    image: prom/prometheus:latest
+    restart: unless-stopped
+    ports:
+      - 9090:9090
+    volumes:
+      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+  
+  grafana:
+    container_name: ffp-api-grafana
+    hostname: ffp-api-grafana
+    image: grafana/grafana:latest
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    volumes:
+      - grafana-volume:/var/lib/grafana
+
+volumes:
+  grafana-volume: {}
+  prometheus-volume: {}
